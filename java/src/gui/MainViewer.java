@@ -54,12 +54,10 @@ public class MainViewer {
 		
 		NotePanel NoteScreen = new NotePanel(connectionManager, userManager);
 		tabs.addTab("Add Note Here", null, NoteScreen, "Add game notes here");
-		
 
-		
 		ReviewPanel ReviewScreen = new ReviewPanel(connectionManager, userManager);
 		tabs.addTab("Add Review Here", null, ReviewScreen, "Add game reviews here");
-
+		
 		UpdateManager updateManager = new UpdateManager(tableScreen, gameScreen);
 		
 		LoginPanel LoginScreen = new LoginPanel(connectionManager, userManager, updateManager);
